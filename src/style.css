@@ -1,5 +1,54 @@
-@import "bootstrap/dist/css/bootstrap.min.css";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
 
 body{
-    background: white;
+    background: green;
+    height: 100vh;
+    width: 100vw;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.carta{
+    position: relative;
+    background-color: #fff;
+    height: 50rem;
+    width: 40rem;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+}
+.textRed{
+    color: red;
+}
+.symbolTop {
+    position: absolute;
+    top: 1rem;
+    left: 1.8rem;
+    font-size: 12rem;
+}
+.valueCard{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 14rem;
+    font-weight: 900;
+}
+.symbolBottom {
+    position: absolute;
+    bottom: 1rem;
+    right: 1.8rem;
+    font-size: 12rem;
 }
